@@ -855,6 +855,7 @@ extern int machine_at_k7m_init(const machine_t *);
 
 /* m_at_misc.c */
 extern int machine_at_vpc2007_init(const machine_t *);
+extern int machine_at_vmware_init(const machine_t *);
 
 /* m_at_t3100e.c */
 extern int machine_at_t3100e_init(const machine_t *);
