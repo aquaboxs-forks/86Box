@@ -15,15 +15,5 @@
 #          Copyright 2024      Jasmine Iwanek.
 #
 
-add_library(mem OBJECT
-    catalyst_flash.c
-    i2c_eeprom.c
-    intel_flash.c
-    mem.c
-    mmu_2386.c
-    rom.c
-    row.c
-    smram.c
-    spd.c
-    sst_flash.c
-)
+add_library(mem OBJECT 815ep_spd_hack.c catalyst_flash.c i2c_eeprom.c intel_flash.c mem.c mmu_2386.c
+    rom.c row.c smram.c spd.c sst_flash.c)

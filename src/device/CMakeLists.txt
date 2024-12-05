@@ -16,35 +16,12 @@
 #          Copyright 2021-2024 Jasmine Iwanek.
 #
 
-add_library(dev OBJECT
-    bugger.c
-    cassette.c
-    cartridge.c
-    hasp.c
-    hwm.c
-    hwm_lm75.c
-    hwm_lm78.c
-    hwm_gl518sm.c
-    hwm_vt82c686.c
-    ibm_5161.c
-    isamem.c
-    isartc.c
-    ../lpt.c
-    pci_bridge.c
-    postcard.c
-    serial.c
-    unittester.c
-    clock_ics9xxx.c
-    isapnp.c
-    i2c.c
-    i2c_gpio.c
-    smbus_piix4.c
-    smbus_ali7101.c
-    smbus_sis5595.c
-    keyboard.c
-    keyboard_xt.c
-    kbc_at.c
-    kbc_at_dev.c
+add_library(dev OBJECT bugger.c cassette.c cartridge.c hasp.c hwm.c hwm_lm75.c hwm_lm78.c hwm_gl518sm.c hwm_nsc366.c
+    hwm_vt82c686.c ibm_5161.c intel_ich2_gpio.c intel_ich2_trap.c
+    isamem.c isartc.c ../lpt.c pci_bridge.c
+    postcard.c serial.c unittester.c clock_ics9xxx.c isapnp.c i2c.c i2c_gpio.c
+    smbus_piix4.c smbus_ali7101.c smbus_sis5595.c keyboard.c keyboard_xt.c
+    kbc_at.c kbc_at_dev.c
     keyboard_at.c
     mouse.c
     mouse_bus.c
@@ -55,6 +32,7 @@ add_library(dev OBJECT
     serial_passthrough.c
     novell_cardkey.c
     mouse_microtouch_touchscreen.c
+    tco.c
 )
 
 if(NOT CMAKE_CXX_COMPILER_ID MATCHES "Clang")

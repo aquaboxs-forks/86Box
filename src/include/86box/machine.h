@@ -185,8 +185,9 @@ enum {
     MACHINE_TYPE_SLOT1_370  = 20,
     MACHINE_TYPE_SLOT2      = 21,
     MACHINE_TYPE_SOCKET370  = 22,
-    MACHINE_TYPE_MISC       = 23,
-    MACHINE_TYPE_MAX        = 24
+    MACHINE_TYPE_SLOTA      = 23,
+    MACHINE_TYPE_MISC       = 24,
+    MACHINE_TYPE_MAX        = 25
 };
 
 enum {
@@ -206,6 +207,7 @@ enum {
     MACHINE_CHIPSET_ALI_ALADDIN_IV_PLUS,
     MACHINE_CHIPSET_ALI_ALADDIN_V,
     MACHINE_CHIPSET_ALI_ALADDIN_PRO_II,
+    MACHINE_CHIPSET_AMD_750,
     MACHINE_CHIPSET_SCAT,
     MACHINE_CHIPSET_NEAT,
     MACHINE_CHIPSET_CT_386,
@@ -230,6 +232,7 @@ enum {
     MACHINE_CHIPSET_INTEL_440BX,
     MACHINE_CHIPSET_INTEL_440ZX,
     MACHINE_CHIPSET_INTEL_440GX,
+    MACHINE_CHIPSET_INTEL_I815EP,
     MACHINE_CHIPSET_OPTI_283,
     MACHINE_CHIPSET_OPTI_291,
     MACHINE_CHIPSET_OPTI_381,
@@ -841,6 +844,14 @@ extern int machine_at_6via90ap_init(const machine_t *);
 extern int machine_at_s1857_init(const machine_t *);
 extern int machine_at_p6bap_init(const machine_t *);
 extern int machine_at_p6bat_init(const machine_t *);
+extern int machine_at_cusl2c_init(const machine_t *);
+extern int machine_at_j815epda_init(const machine_t *);
+extern int machine_at_m6tsl_init(const machine_t *);
+extern int machine_at_m6tss_init(const machine_t *);
+extern int machine_at_s2080_init(const machine_t *);
+
+/* m_at_slota.c */
+extern int machine_at_k7m_init(const machine_t *);
 
 /* m_at_misc.c */
 extern int machine_at_vpc2007_init(const machine_t *);
